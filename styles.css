@@ -5,58 +5,62 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "American Typewriter";
   margin: 0;
   background-color: #d3d3d3;
 }
 
-nav {
+.header {
+  display: grid;
+  grid-template-columns: auto 5em 5em 5em 5em 5em 5em;
+  grid-template-rows: 50% 50%;
+
   background-color: aquamarine;
   color: grey;
   margin: 0;
-  display: grid;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-.logo {
-  display: grid;
-  justify-content: flex-end;
-  margin-right: 2em;
+  padding: 2em 0em 2em 4em;
+  font-size: 18px;
 }
 
 a:hover {
-  font-weight: bold;
+  font-weight: 900;
   color: lightpink;
 }
 
-.name {
-  display: grid;
-  justify-content: flex-start;
-  padding: 0.5em 0 0 0.5em;
-
-  margin-right: 0;
-}
-
-.navLinks {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-right: 2em;
+a {
+  text-decoration: none;
+  color: grey;
 }
 
 /*
-.header {
+.name {
   display: grid;
-  grid-column: span;
+  padding: 0.5em 0 0 0.5em;
+  border: solid 1px red;
 }
 */
+/*
+.navLinks {
+  display: grid;
+  justify-content: flex-end;
+  padding: 0em 1em 0em 1em;
+  border: solid 1px blue;
+}
+.name .navLinks {
+  display: grid;
+  align-items: center;
+}
+*/
+
+/* ENDE HEADER */
 .main {
-  background-color: #d3d3d3;
+  display: grid;
+  padding: 4em 4em 4em 4em;
+  grid-template-columns: auto . auto;
+  grid-template-rows: 2fr 2fr;
 }
 
-.footer {
-  background-color: #ffb6c1;
+.intro {
+  display: grid;
+  justify-self: center;
 }
