@@ -17,7 +17,7 @@ h2 {
 }
 header {
   display: grid;
-  grid-template-columns: auto 5em 5em 5em 5em 5em 5em;
+  grid-template-columns: auto 4.5em 4.5em 4.5em 4.5em 4.5em;
   grid-template-rows: 50% 50%;
   background-color: aquamarine;
   color: grey;
@@ -35,6 +35,10 @@ a:hover {
 
 .name {
   padding-left: 1em;
+}
+
+.navLinks {
+  justify-content: space-evenly;
 }
 a {
   text-decoration: none;
