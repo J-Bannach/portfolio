@@ -15,16 +15,17 @@ h2 {
     "Lucida Sans", Arial, sans-serif;
   color: slategrey;
 }
-.header {
+header {
   display: grid;
   grid-template-columns: auto 5em 5em 5em 5em 5em 5em;
   grid-template-rows: 50% 50%;
-
   background-color: aquamarine;
   color: grey;
   margin: 0;
-  padding: 2em 0em 2em 4em;
+  padding: 1em 1em 1em 1em;
   font-size: 18px;
+  position: sticky;
+  top: 0;
 }
 
 a:hover {
@@ -32,31 +33,44 @@ a:hover {
   color: lightpink;
 }
 
+.name {
+  padding-left: 1em;
+}
 a {
   text-decoration: none;
   color: grey;
 }
 
-.main {
+main {
   display: grid;
-  padding: 4em 4em 4em 4em;
+  padding: 1em 1em 1em 1em;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-rows: 30%, 70%;
   justify-items: center;
 }
 
-.main-image {
+main img {
   grid-area: 1 / 1 / 2 / 3;
+  padding-bottom: 2em;
 }
-.main-item1 {
+.aboutMe {
   text-align: left;
-  width: 20em;
+  width: 35em;
   height: fit-content;
-  grid-gap: 5em;
+
+  background-color: #c0c0c0;
+  padding: 1em 2em 1em 2em;
 }
 
-.main-item2 {
+.motivation {
+  text-align: left;
+  width: 35em;
+  height: fit-content;
+  background-color: #c0c0c0;
   padding: 1em 2em 1em 2em;
+}
+.interests {
+  padding: 1em 1em 1em 1em;
   text-align: left;
   height: fit-content;
 }
