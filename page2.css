@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&display=swap");
+
+:root {
+  --main-bg-color: #446ea6;
+  --main-font-color: #f28705;
+  --secondary-bg-color: #77acf2;
+  --highlighter: #f29f05;
+  --special: #bf4904;
+  --primary-font-family: "Roboto";
+  --secondary-font-family: "Montserrat";
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  display: grid;
+  grid-template-columns: 1fr auto auto 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+
+/* //// Header //// */
+.name {
+  font-family: var(--primary-font-family);
+  grid-row: 2/3;
+  color: #77acf2;
+}
+
+/* //// MAIN //// */
+.hero img {
+  height: 20em;
+  width: 20em;
+  grid-area: 2/3/3/4;
+}
+
+/* //// FOOTER //// */
+.footer img {
+  height: 2em;
+  width: 2em;
+}
