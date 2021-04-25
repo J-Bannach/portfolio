@@ -8,6 +8,9 @@ body {
   font-family: "American Typewriter";
   margin: 0;
   background-color: #d3d3d3;
+  display: grid;
+  grid-template-columns: 1fr auto auto 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
 }
 
 h2 {
@@ -15,16 +18,23 @@ h2 {
     "Lucida Sans", Arial, sans-serif;
   color: slategrey;
 }
-.header {
-  display: grid;
+/* .header {
+  /* display: grid;
   grid-template-columns: auto 5em 5em 5em 5em 5em 5em;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 50% 50%; */
 
+.header {
+  grid-area: 1/1/4/5;
   background-color: aquamarine;
   color: grey;
-  margin: 0;
+
   padding: 2em 0em 2em 4em;
   font-size: 18px;
+}
+
+.navLinks {
+  grid-area: 1/3/2/5;
+  color: blue;
 }
 
 a:hover {
@@ -61,8 +71,8 @@ a {
 .main {
   display: grid;
   padding: 4em 4em 4em 4em;
-  grid-template-columns: 10%, repeat(3, 30%);
-  grid-template-rows: repeat(2, 50%);
+  /* grid-template-columns: 10%, repeat(3, 30%);
+  grid-template-rows: repeat(2, 50%); */
 }
 
 .main-image {
